@@ -1,20 +1,136 @@
-<!DOCTYPE html> <!-- Define o tipo do documento como HTML5 -->
-<html lang="pt-br"> <!-- Início do HTML e idioma português do Brasil -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head> <!-- Cabeçalho do site -->
-    <meta charset="UTF-8"> <!-- Define a codificação de caracteres -->
-    <title>Projeto Base</title> <!-- Título da aba do navegador -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Conecta o arquivo CSS -->
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <title>Exemplo Bootstrap</title>
 </head>
+<body>
 
-<body> <!-- Corpo visível do site -->
+    <!-- Cabeçalho -->
+    <header class="bg-primary text-white text-center py-4">
+        <h1>Meu Primeiro Site com Bootstrap</h1>
+        <p class="mb-0">Exemplo de utilização de Cards e Botões</p>
+    </header>
 
-    <h1>Olá, mundo!</h1> <!-- Título principal da página -->
+    <!-- Conteúdo Principal -->
+    <main class="container mt-5">
 
-    <button id="botao">Clique aqui</button> <!-- Botão com identificador -->
+        <!-- Card -->
+        <div class="card shadow mb-4">
+            <div class="card-header bg-dark text-white">
+                Destaque
+            </div>
 
-    <script src="script.js"></script> <!-- Conecta o arquivo JavaScript -->
+            <div class="card-body">
+                <h5 class="card-title">Bem-vindo ao Bootstrap</h5>
+
+                <p class="card-text">
+                    Bootstrap é um framework CSS que facilita a criação
+                    de interfaces modernas, responsivas e organizadas.
+                </p>
+
+                <a href="#" class="btn btn-primary">
+                    Saiba Mais
+                </a>
+            </div>
+        </div>
+
+        <!-- Botões -->
+        <h2 class="mb-3">Exemplos de Botões</h2>
+
+        <div class="d-flex flex-wrap gap-2">
+
+            <a href="icons.html" class="btn btn-outline-primary">
+                Icons
+            </a>
+
+            <button type="button" class="btn btn-outline-secondary">
+                Secondary
+            </button>
+
+            <button type="button" class="btn btn-outline-success">
+                Success
+            </button>
+
+            <button type="button" class="btn btn-outline-danger">
+                Danger
+            </button>
+
+            <button type="button" class="btn btn-outline-warning">
+                Warning
+            </button>
+
+            <button type="button" class="btn btn-outline-info">
+                Info
+            </button>
+
+            <button type="button" class="btn btn-outline-light border">
+                Light
+            </button>
+
+            <button type="button" class="btn btn-outline-dark">
+                Dark
+            </button>
+
+        </div>
+
+        <!-- Cards em Colunas -->
+        <div class="row mt-5">
+
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">HTML</h5>
+                        <p class="card-text">
+                            Estrutura básica das páginas web.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">CSS</h5>
+                        <p class="card-text">
+                            Responsável pela aparência e estilo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Bootstrap</h5>
+                        <p class="card-text">
+                            Framework que agiliza o desenvolvimento.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p class="mb-0">
+            © 2026 - Exemplo Bootstrap
+        </p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
-
-</html> <!-- Fim do HTML -->
+</html>
