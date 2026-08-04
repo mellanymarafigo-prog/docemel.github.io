@@ -3,7 +3,7 @@ body {
 }
 
 .banner {
-    background-image: url('../imagens/banner.jpg'); /* coloca uma imagem na pasta imagens */
+    background-image: url('../imagens/banner.jpg');
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -19,4 +19,17 @@ body {
 .card {
     border: none;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Esse aqui é do modo escuro - da parte 4 */
+body.dark-mode {
+    background: #121212;
+    color: #fff;
+}
+body.dark-mode .bg-light {
+    background: #1e1e1e !important;
+}
+body.dark-mode .card {
+    background: #2c2c2c;
+    color: #fff;
 }
