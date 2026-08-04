@@ -1,1 +1,22 @@
+body {
+    padding-top: 56px; /* pra navbar não cobrir o conteúdo */
+}
 
+.banner {
+    background-image: url('../imagens/banner.jpg'); /* coloca uma imagem na pasta imagens */
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1 {
+    text-shadow: 2px 2px 4px black;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
